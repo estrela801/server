@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Criando um servidor back-end  com o video do Rodolfo Mori/ DevClub \r <https://www.youtube.com/watch?v=PyrMT0GA3sE&t=1323s>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "do": "node server.js --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
