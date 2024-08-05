@@ -41,10 +41,10 @@ app.put('/usuarios/:var', async (req,res)=>{
             age: req.body.age
         }
     })
-    res.send('deu bom')
+    res.send('deu bom, alterou')
 })
 
-app.delete('/usuario/:id', async (req,res) =>{
+app.delete('/usuarios/:id', async (req,res) =>{
     console.log(req);
     
     await prisma.user.delete({
@@ -52,6 +52,6 @@ app.delete('/usuario/:id', async (req,res) =>{
             id: req.params.id
         }
     })
-    res.status(200)
+    res.status(200).json({message : "deu bom"}  )
 })
 app.listen(3000)
